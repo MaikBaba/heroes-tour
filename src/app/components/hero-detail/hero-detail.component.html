@@ -1,0 +1,12 @@
+<div *ngIf="hero" class="selectedHeroCard">
+  <h2>{{hero.name}} details!</h2>
+  <li>
+    <span>id: </span>
+    <span>{{hero.id}}</span>
+  </li>
+  <li>
+    <span>name: </span>
+    <input [(ngModel)]="hero.name" placeholder="name"/>
+  </li>
+  <button (click)="goBack()">Back</button>
+</div>

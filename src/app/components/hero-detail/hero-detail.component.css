@@ -1,0 +1,93 @@
+.selectedHeroCard {
+  background-color : #CFD8DC !important;
+  width            : 15em;
+  height           : auto;
+  padding-bottom   : 1px;
+  border-radius    : 4px;
+}
+
+.selectedHeroCard h2 {
+    background-color : #607D8B !important;
+    margin-bottom    : 10px;
+    padding-top      : 10px;
+    padding-left     : 10px;
+    width            : 9.6em;
+    height           : 1.5em;
+    color            : white;
+    border-radius    : 4px 4px 0 0;
+    white-space      : nowrap;
+    overflow         : hidden;
+    text-overflow    : ellipsis;
+}
+
+.selectedHeroCard li{
+  cursor           : pointer;
+  position         : relative;
+  background-color : #EEE;
+  margin           : .5em;
+  padding          : .2em 0;
+  height           : 1.6em;
+  border-radius    : 0 4px 4px 0;
+}
+
+.selectedHeroCard li span:first-child{
+    display          : inline-block;
+    font-size        : small;
+    color            : white;
+    padding          : 0.8em 1.7em 0 0.7em;
+    background-color : #607D8B;
+    line-height      : 1em;
+    position         : relative;
+    top              : -8px;
+    left             : -23px;
+    height           : 1.6em;
+    width            : 1.5em;
+    margin-right     : 0.4em;
+    margin-top       : 0.4em;
+    border-radius    : 4px 0 0 4px;
+}
+
+.selectedHeroCard li span:nth-of-type(2){
+    display       : inline-block;
+    font-size     : small;
+    padding       : 0.8em 1.7em 0 0.7em;
+    line-height   : 1em;
+    position      : relative;
+    top           : -8px;
+    left          : -23px;
+    height        : 1.6em;
+    width         : 1.5em;
+    margin-right  : 0.4em;
+    margin-top    : 0.4em;
+    border-radius : 4px 0 0 4px;
+}
+
+.selectedHeroCard li input{
+  position : relative;
+  top      : -8px;
+  left     : -23px;
+}
+
+button {
+  margin-top       : 20px;
+  font-family      : Arial;
+  background-color : #eee;
+  border           : none;
+  padding          : 5px 10px;
+  margin           : 0px 10px 8px 10px;
+  border-radius    : 4px;
+  cursor           : pointer; cursor: hand;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button:disabled {
+  background-color : #eee;
+  color            : #ccc;
+  cursor           : auto;
+}
+
+
+
