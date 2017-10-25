@@ -22,7 +22,7 @@ export class HeroesListComponent implements OnInit {
 
   // memberVariables
   getHeroes(): void {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+    this.heroService.getHeroes().then( heroes => this.heroes = heroes['_body'] );
   }
 
   // functions
@@ -32,7 +32,7 @@ export class HeroesListComponent implements OnInit {
 
   gotoDetail(): void {
     this.router.navigate(['/detail', this.selectedHero.id]);
-  };
+  }
 
   ngOnInit(): void {
     this.getHeroes();
