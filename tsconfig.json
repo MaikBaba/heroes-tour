@@ -12,7 +12,7 @@
       "es2017",
       "dom"
     ],
-    "baseURL": "src"
+    "baseUrl": "src"
   },
   "include": [
     "src/**/*"
