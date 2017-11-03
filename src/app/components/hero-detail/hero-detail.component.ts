@@ -26,6 +26,11 @@ export class HeroDetailComponent implements OnInit {
     this.location.back();
   }
 
+  save(): void {
+    this.heroService.update(this.hero)
+      .then(() => this.goBack());
+  }
+
   ngOnInit(): void {
       /*The switchMap operator maps the id in the
       Observable route parameters to a new Observable,
