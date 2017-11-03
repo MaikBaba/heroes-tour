@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core'
+import { RouterModule, Routes } from '@angular/router'
 
-import { AppDashboardComponent } from 'app/components/app-dashboard/app-dashboard.component';
-import { HeroesListComponent } from 'app/components/heroes-list/heroes-list.component';
-import { HeroDetailComponent } from 'app/components/hero-detail/hero-detail.component';
+import { AppDashboardComponent } from 'app/components/app-dashboard/app-dashboard.component'
+import { HeroesListComponent } from 'app/components/heroes-list/heroes-list.component'
+import { HeroDetailComponent } from 'app/components/hero-detail/hero-detail.component'
 
 const routes: Routes = [
   {
@@ -26,7 +26,7 @@ const routes: Routes = [
     redirectTo : '/dashboard',
     pathMatch  : 'full'
   },
-];
+]
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],

@@ -1,21 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { HttpModule } from '@angular/http'
 
 // Imports for loading & configuring the in-memory web api
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { HeroInMemDataService } from './services/hero-in-mem-data/hero-in-mem-data.service';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api'
+import { HeroInMemDataService } from './services/hero-in-mem-data/hero-in-mem-data.service'
 
-import { AppComponent } from './app.component';
-import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
-import { HeroesListComponent } from './components/heroes-list/heroes-list.component';
-import { AppDashboardComponent } from './components/app-dashboard/app-dashboard.component';
-import { AppNavigationComponent} from './components/app-navigation/app-navigation.component';
+import { AppComponent } from './app.component'
+import { HeroDetailComponent } from './components/hero-detail/hero-detail.component'
+import { HeroesListComponent } from './components/heroes-list/heroes-list.component'
+import { AppDashboardComponent } from './components/app-dashboard/app-dashboard.component'
+import { AppNavigationComponent} from './components/app-navigation/app-navigation.component'
 
-import { HeroService } from './services/hero/hero.service';
+import { HeroService } from './services/hero/hero.service'
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module'
 
 @NgModule({
   declarations: [

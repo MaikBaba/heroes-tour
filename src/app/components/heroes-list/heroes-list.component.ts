@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { Router } from '@angular/router'
 
-import { Hero } from 'app/classes/hero/hero.class';
-import { HeroService } from 'app/services/hero/hero.service';
+import { Hero } from 'app/classes/hero/hero.class'
+import { HeroService } from 'app/services/hero/hero.service'
 
 @Component({
   selector    : 'heroes-list',
@@ -13,31 +13,29 @@ import { HeroService } from 'app/services/hero/hero.service';
 
 export class HeroesListComponent implements OnInit {
   // variables
-  heroes: Hero[];
-  selectedHero: Hero;
+  heroes: Hero[] = []
+  selectedHero: Hero = null
 
   constructor(
     private heroService: HeroService,
-    private router: Router ) { }
+    private router: Router
+  ) { }
 
   // memberVariables
   getHeroes(): void {
-    this.heroService.getHeroes().then( heroes => this.heroes = heroes['_body'] );
+    this.heroService.getHeroes().then( heroes => this.heroes = heroes as Hero[] )
   }
 
   // functions
   onSelect(hero: Hero): void {
-    this.selectedHero = hero;
+    this.selectedHero = hero
   }
 
   gotoDetail(): void {
-    this.router.navigate(['/detail', this.selectedHero.id]);
+    this.router.navigate(['/detail', this.selectedHero.id])
   }
 
   ngOnInit(): void {
-    this.getHeroes();
+    this.getHeroes()
   }
 }
-
-
-
