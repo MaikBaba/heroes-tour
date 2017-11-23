@@ -10,6 +10,7 @@ import { HeroInMemDataService } from './services/hero-in-mem-data/hero-in-mem-da
 import { AppComponent } from './app.component'
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component'
 import { HeroesListComponent } from './components/heroes-list/heroes-list.component'
+import { RxjsComponent } from './components/rxjs-tutorial/rxjs-tutorial.component'
 import { AppDashboardComponent } from './components/app-dashboard/app-dashboard.component'
 import { AppNavigationComponent} from './components/app-navigation/app-navigation.component'
 
@@ -22,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module'
     AppComponent,
     HeroDetailComponent,
     HeroesListComponent,
+    RxjsComponent,
     AppDashboardComponent,
     AppNavigationComponent
   ],

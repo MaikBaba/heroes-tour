@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router'
 import { AppDashboardComponent } from 'app/components/app-dashboard/app-dashboard.component'
 import { HeroesListComponent } from 'app/components/heroes-list/heroes-list.component'
 import { HeroDetailComponent } from 'app/components/hero-detail/hero-detail.component'
+import { RxjsComponent } from 'app/components/rxjs-tutorial/rxjs-tutorial.component'
 
 const routes: Routes = [
   {
@@ -20,6 +21,11 @@ const routes: Routes = [
     path      : 'detail/:id',
     component : HeroDetailComponent,
     data      : { title: 'Hero Details' }
+  },
+  {
+    path       : 'rxjs',
+    component : RxjsComponent,
+    data       : { title: 'rxJS'},
   },
   {
     path       : '',
